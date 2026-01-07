@@ -384,31 +384,16 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-12 col-lg-7 wow slideInRight" data-wow-delay=".5s">
-                <form 
-                    class="row contact-form row-padding" 
-                    id="contact-form-data"
-                    action="https://formsubmit.co/chirag@bidx.ai"
-                    method="POST">
+             <div class="col-12 col-md-12 col-lg-7 wow slideInRight" data-wow-delay=".5s">
 
-                    <!-- FormSubmit hidden fields -->
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_autoresponse" value="Thank you! We received your message.">
-
-                    <div class="col-12 col-lg-10" id="result"></div>
-
-                    <div class="col-12 col-lg-10">
-                        <input type="text" name="userName" placeholder="Name" class="form-control" required>
-                        <input type="text" name="userPhone" placeholder="Contact No" class="form-control">
-                        <input type="email" name="userEmail" placeholder="Email" class="form-control" required>
-                        <textarea class="form-control" name="userMessage" rows="6" placeholder="Describe your Bubble project or question!" required></textarea>
-
-                        <button type="submit" class="btn btn-medium btn-rounded btn-trans rounded-pill w-100 contact_btn main-font">
-                            Start My Bubble Project
-                        </button>
-                    </div>
-                </form>
+                <!-- Panda Contact Form -->
+                <div
+                    data-panda-contact
+                    data-endpoint="https://bfwqdadlcyndtaqmqtci.supabase.co/functions/v1/panda-contact"
+                    data-to-email="chirag@bidx.ai"
+                    data-success="Thanks! Our Bubble experts will reach out shortly."
+                ></div>
+            
             </div>
         </div>
     </div>
